@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Me</title>
+<style>
+body {
+    background-color: #808284;
+}
+button{
+  float:left;
+  margin-top:10%;
+}
+img {
+    float: left;
+    margin: 10px;
+    width:164px;
+    height:229px;
+}
+.left {
+  float: left;
+}
+.right{
+  clear: left;
+}
+
+div {
+    background-color: #ececec;
+}
+
+.div0{
+    float: left;
+    width: 1046px;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #71b43a;
+}
+.div1{
+    float: left;
+    width: 600px;
+    height: 227px;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #71b43a;
+}
+.div2{
+    float: left;
+    width: 400px;
+    height: 227px;
+    padding: 10px;
+    margin: 10px;
+    border: 3px solid #71b43a;
+}
+.div3{
+    float: left;
+    width: 600px;
+    height: 227px;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    border: 3px solid #71b43a;
+}
+.spanleft{
+  float: left;
+}
+.spanright{
+  float: right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="div0">
+<h1>Will Haltom</h1>
+</div>
+
+<script src="scripts.js"></script>
+
+<div class="div0">
+  <button id="imgleft" onclick="imgScroll('left')"><-</button>
+  <img id="profile1" src="resources/William.jpg" alt="Will Image" onmouseover="growImg('profile1')" onmouseout="this.style.height = '229px'; this.style.width = '164px'">
+  <img id="profile2" src="resources/bike.jpg" alt="Will Image" onmouseover="growImg('profile2')" onmouseout="this.style.height = '229px'; this.style.width = '164px'">
+  <img id="profile3" src="resources/hat.jpg" alt="Will Image" onmouseover="growImg('profile3')" onmouseout="this.style.height = '229px'; this.style.width = '164px'">
+  <img id="profile4" src="resources/havasu.jpg" alt="Will Image" onmouseover="growImg('profile4')" onmouseout="this.style.height = '229px'; this.style.width = '164px'">
+  <button id="imgright" onclick="imgScroll('right')">-></button>
+</div>
+
+<div class="div1">
+<h2>About Me</h2>
+<p id="abtMe">I graduated from the University of Minnesota in May 2017 with degrees in Computer Science and Mathematics.
+  I will begin working full time as a software developer in August, and my interests include data mining/machine
+  learning and probability theory. In my spare time, I enjoy reading, eating barbecue, and competing in triathlons.
+  I spent 2 years as a TA during my time at the U of M, and I'm excited to continue teaching for Girls Who Code!</p>
+</div>
+
+<div class="div2" onclick="extendFacts()" id = "funfacts">
+<h2>Fun Fact(s)</h2>
+I'm one of those people who orders pineapple on pizza.
+</div>
+
+<div class="div3">
+<h2>Likes and Dislikes</h2>
+<span class="spanleft">
+<h3> Likes:</h3>
+<ul>
+  <li>Running</li>
+  <li>Swimming</li>
+  <li>Biking</li>
+  <li>Mexican food</li>
+  <li>Reading</li>
+</ul>
+</span>
+<span class="spanleft">
+<h3> Dislikes:</h3>
+<ul>
+  <li>Applebees</li>
+  <li>Salad with fruit in it</li>
+  <li>Oversleeping</li>
+  <li>The movie 'Avatar'</li>
+  <li>Little yappy dogs</li>
+</ul>
+</span>
+</div>
+
+
+
+<div class="div2">
+<h2>Some websites I like</h2>
+<ul>
+  <li><a href="http://www.slowtwitch.com/">Triathlon news and forums</a></li>
+  <li><a href="https://xkcd.com/">Webcomic for nerds</a></li>
+  <li><a href="https://projecteuler.net/">Cool computational math problems</a></li>
+</ul>
+</div>
+
+<div class = "div2" onclick="document.getElementById('jsE').style.display = 'none' " id="jsE">
+  <h2>Example</div>
+</div>
+
+<script type="text/javascript">
+  alert("Welcome to my page!");
+</script>
+
+
+
+
+
+</body>
+</html>
