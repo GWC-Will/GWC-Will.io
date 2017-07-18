@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Example Quiz</title>
+</head>
+<body>
+  <div align="center" id="MainDiv">
+    <h1>Personality Quiz</h1>
+
+    <br/>
+    What is your favorite color?
+
+    <br/>
+    <input type = "radio" name = "ColorQuestions" id = "color1">
+    <label for="color1">Blue</label>
+
+    <br/>
+
+    <input type = "radio" name = "ColorQuestions" id = "color2">
+    <label for="color2">Red</label>
+
+    <br/>
+    <br/>
+    What is your favorite ice cream?
+
+    <br/>
+    <input type = "radio" name = "IceCreamQuestions" id = "iceCream1">
+    <label for="iceCream1">Chocolate</label>
+
+    <br/>
+
+    <input type = "radio" name = "IceCreamQuestions" id = "iceCream2">
+    <label for="iceCream2">Vanilla</label>
+
+    <br/>
+    <br/>
+    What is your favorite movie?
+
+    <br/>
+    <input type = "radio" name = "MovieQuestions" id = "movie1">
+    <label for="movie1">The Matrix</label>
+
+    <br/>
+
+    <input type = "radio" name = "MovieQuestions" id = "movie2">
+    <label for="movie2">The Notebook</label>
+
+    <br/>
+    <br/>
+
+    <input type="button" value="What's my personality?" name = "SubmitButton" id = "button1" onclick="getPersonality()">
+
+
+  <div>
+
+    <script type="text/javascript">
+      function getPersonality(){
+        var typeOneScore = 0;
+        var typeTwoScore = 0;
+
+        if(document.getElementById("color1").checked){
+          typeOneScore += 1;
+        }
+        else if (document.getElementById("color2").checked) {
+          typeTwoScore += 1;
+        }
+
+        if(document.getElementById("iceCream1").checked){
+          typeOneScore += 1;
+        }
+        else if (document.getElementById("iceCream2").checked) {
+          typeTwoScore += 1;
+        }
+
+        if(document.getElementById("movie1").checked){
+          typeOneScore += 1;
+        }
+        else if (document.getElementById("movie2").checked) {
+          typeTwoScore += 1;
+        }
+
+
+        if(typeOneScore > typeTwoScore){
+          document.getElementById("MainDiv").innerHTML += "Your personality is type 1!";
+        }
+        else{
+          document.getElementById("MainDiv").innerHTML += "Your personality is type 2!";
+        }
+      }
+
+
+    </script>
+
+
+</body>
+
+
+</html>
